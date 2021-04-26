@@ -1,0 +1,9 @@
+function isSpock = is_this_spock()
+
+isSpock =  ((~contains(pwd,'smb')   | ...
+    ~contains(pwd,'usr/people')     | ...
+    ~contains(pwd,'jukebox'))         ...
+    & ~ispc & ~ismac );
+
+
+end

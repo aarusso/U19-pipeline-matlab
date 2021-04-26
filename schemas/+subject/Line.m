@@ -5,7 +5,7 @@ line:                   varchar(128)	# name
 -> subject.Strain
 line_description='':	varchar(2048)	# description
 target_phenotype='':	varchar(255)	# target phenotype
-is_active=1:			boolean		    # is active
+is_active=1:			tinyint		    # is active
 %}
 
 classdef Line < dj.Lookup

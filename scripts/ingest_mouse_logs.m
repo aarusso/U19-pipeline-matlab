@@ -53,9 +53,15 @@ for iuser = 1:length(users)
             if ~isempty(log.received)
                 key_water_admin.administration_date = sprintf('%d-%02d-%02d', ...
                     log.date(1), log.date(2), log.date(3));
-                key_water_admin.earned = log.earned;
-                key_water_admin.supplement = log.supplement;
+                
+                if ~isempty(log.earned)
+                    key_water_admin.earned = log.earned;
+                end
+                if ~isempty(log.supplement)
+                    key_water_admin.supplement = log.supplement;
+                end
                 key_water_admin.received = log.received;
+                
                 key_water_admin.watertype_name = 'Unknown';
                 inserti(action.WaterAdministration, key_water_admin)
             end

@@ -1,5 +1,5 @@
 %{
-cage:  char(8)    # name of a cage
+cage:  char(16)    # name of a cage
 ---
 (cage_owner) -> lab.User
 %}

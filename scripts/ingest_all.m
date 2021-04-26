@@ -1,12 +1,12 @@
 
 disp 'Ingest mice information ...'
-ingest_mice
+% ingest_mice
 
 disp 'Ingest tasks ...'
-ingest_task_tables
+% ingest_task_tables
 
 disp 'Ingest mouse logs ...'
-ingest_mouse_logs
+% ingest_mouse_logs
 
 disp 'Ingest trial information ...'
 clear

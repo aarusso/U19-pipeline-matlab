@@ -1,7 +1,6 @@
 %{
 # manula curation of morphological classification of the ROIs
 -> meso.SegmentationRoi
-curation_time=CURRENT_TIMESTAMP: timestamp
 ---
 morphology:  enum('Doughnut', 'Blob', 'Puncta', 'Filament', 'Other', 'Noise')
 %}
